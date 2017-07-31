@@ -1,6 +1,6 @@
 # Identicon
 
-**TODO: Add description**
+**just learning some elixir**
 
 ## Installation
 
