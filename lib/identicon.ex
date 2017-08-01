@@ -3,6 +3,15 @@ defmodule Identicon do
   Documentation for Identicon.
   """
 
+  @doc """
+  Creates an icon based on the provided `input`
+
+  ## Example
+
+      iex> Identicon.main("test")
+      :ok
+      
+  """
   def main(input) do
     input
     |> hash_input 
@@ -14,6 +23,9 @@ defmodule Identicon do
     |> save_image(input)
   end
 
+  @doc """
+  Saves image to disk
+  """
   def save_image(image, input) do
     File.write("#{input}.png", image)  
   end
